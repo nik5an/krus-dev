@@ -11,6 +11,7 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <header class="header">
@@ -87,18 +88,17 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Свържи се</h2>
-
-        <form action="#">
+        <form action="https://formspree.io/f/xpzgdwyg" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Име">
-                <input type="email" placeholder="Имейл адрес">
+                <input name="name" type="text" placeholder="Име">
+                <input name="email" type="email" placeholder="Имейл адрес">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Номер">
-                <input type="text" placeholder="Заглавие">
+                <input name="number" type="number" placeholder="Номер">
+                <input name="subject" type="text" placeholder="Заглавие">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Съобщение"></textarea>
-            <input type="submit" value="Изпрати" class="btn">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Съобщение"></textarea>
+            <input id="submit" type="submit" value="Изпрати" class="btn">
         </form>
     </section>
 

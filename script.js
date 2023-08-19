@@ -1,5 +1,6 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+const btn = document.querySelector('#submit');
 
 menuIcon.onclick = () => {
      menuIcon.classList.toggle('bx-x');
